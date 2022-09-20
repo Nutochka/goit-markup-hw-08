@@ -6,11 +6,6 @@
         padding: 0 15px;
     }
     
-    @media screen and (min-width: 1200px) {
-        // padding-top: 24px;
-        // padding-bottom: 25px;
-    }
-    
     &__header {
         margin: 0 auto;
     }
@@ -25,7 +20,7 @@
     }
 }
 
-.navigation__holder {
+.navigation__links {
     display: none;
 
     @media screen and (min-width: 768px) {
@@ -41,6 +36,12 @@
         padding: 0 15px;
     }
 
+}
+
+.navigation__links.links.header {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .list.contacts {
