@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Web Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css"/>
+</head>
+<body class="page">
+    <div class="navigation">
+        <div class="navigation__holder navigation__header">
+            <header class="navigation__links links header">
+                <nav class="navigation__pages">
+                    <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
+                    <ul class="navigation__menu list">
+                        <li><a href="./index.html" class="navigation__page link">Студія</a></li>
+                        <li><a href="./portfolio.html" class="navigation__page link current">Портфоліо</a></li>
+                        <li><a href="" class="navigation__page link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="navigation__contacts list contacts">
+                    <li class="navigation__holder-contacts">
+                        <a href="mailto:info@devstudio.com" class="navigation__mail contacts link header">
+                            <svg class="navigation__icon-mail" width="16" height="12">
+                                <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="navigation__holder-contacts-phone">
+                        <a href="tel:+380961111111" class="navigation__phone contacts link header">
+                            <svg class="navigation__icon-phone" width="10" height="16">
+                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+        <div class="menu-mob-short">
+            <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
+            <button type="button" class="menu-open">
+                <svg class="menu-open-button" width="40" height="40">
+                    <use href="./images/symbol-defs-3.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu is-hidden">
+            <div class="mob-container">
+                <div class="mob-menu-top">
+                    <button type="button" class="menu-close">
+                        <svg class="menu-close-button" width="40" height="40">
+                            <use href="./images/symbol-defs-3.svg#icon-close_40px"></use>
+                        </svg>
+                    </button>
+                    <nav>
+                        <ul class="mob-menu-list">
+                            <li class="mob-menu-item">
+                                <a href="#studio" class="mob-menu-link">Студія</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a href="#portfolio" class="mob-menu-link">Портфоліо</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a href="#contacts" class="mob-menu-link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mob-menu-bottom">
+                    <div class="mob-contacts">
+                        <a href="" class="mob-contacts__phone">+38 096 111 11 11</a>
+                        <a href="" class="mob-contacts__mail">info@devstudio.com</a>
+                    </div>
+                    <ul class="mob-soc-list">
+                        <li class="mob-soc-item">
+                            <a href="" class="mob-soc-link">Instagram</a>
+                        </li>
+                        <li class="mob-soc-item">
+                            <a href="" class="mob-soc-link">Twitter</a>
+                        </li>
+                        <li class="mob-soc-item">
+                            <a href="" class="mob-soc-link">Facebook</a>
+                        </li>
+                        <li class="mob-soc-item">
+                            <a href="" class="mob-soc-link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="examples section">
+            <div class="container">
+                <h1 class="visually-hidden">Examples</h1>
+                <ul class="examples__list list examples buttons">
+                    <li class="examples__button-shadow"><button type="button" class="button">Усі</button></li>
+                    <li><button type="button" class="examples_button button">Веб-сайти</button></li>
+                    <li><button type="button" class="examples_button button">Додатки</button></li>
+                    <li><button type="button" class="examples_button button">Дизайн</button></li>
+                    <li><button type="button" class="examples_button button">Маркетинг</button></li>
+                </ul>
+                <div class="examples__gallery-box">
+                    <ul class="examples__gallery list examples">
+                        <li class="examples__cards">
+                            <a href="" class="examples_link link">
+                                <div class="examples__img">
+                                    <picture>
+                                        <source
+                                        srcset=”
+                                            ./images/project-1.jpg 1x,
+                                            ./images/project-1-desktop-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 1200px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-1-tab-1x.jpg 1x,
+                                            ./images/project-1-tab-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 768px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-1-mob-1x.jpg    1x,
+                                            ./images/project-1-mob-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 320px)”
+                                        />
+                                        <img src="./images/project-1.jpg" alt="Зображення веб-сайту сторінки" width="370"/>
+                                    </picture>
+                                    <p class="examples__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="examples__holder">
+                                    <h2 class="examples__title">Технокряк</h2>
+                                    <p class="examples__description">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="examples__cards">
+                            <a href="" class="examples_link link">
+                                <div class="examples__img">
+                                    <picture>
+                                        <source
+                                        srcset=”
+                                            ./images/project-2.jpg 1x,
+                                            ./images/project-2-desktop-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 1200px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-2-tab-1x.jpg 1x,
+                                            ./images/project-2-tab-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 768px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-2-mob-1x.jpg 1x,
+                                            ./images/project-2-mob-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 320px)”
+                                        />
+                                        <img src="./images/project-2.jpg" alt="Постер з баскетболістами" width="370"/>
+                                    </picture>
+                                    <p class="examples__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="examples__holder">
+                                    <h2 class="examples__title">Постер New Orlean vs Golden Star</h2>
+                                    <p class="examples__description">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="examples__cards">
+                            <a href="" class="examples_link link">
+                                <div class="examples__img">
+                                    <picture>
+                                        <source
+                                        srcset=”
+                                            ./images/project-3.jpg 1x,
+                                            ./images/project-3-desktop-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 1200px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-3-tab-1x.jpg 1x,
+                                            ./images/project-3-tab-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 768px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-3-mob-1x.jpg    1x,
+                                            ./images/project-3-mob-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 320px)”
+                                        />
+                                        <img src="./images/project-3.jpg" alt="Лого ресторану" width="370"/>
+                                    </picture>
+                                    <p class="examples__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="examples__holder">
+                                    <h2 class="examples__title">Ресторан Seafood</h2>
+                                    <p class="examples__description">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="examples__cards">
+                            <a href="" class="examples_link link">
+                                <div class="examples__img">
+                                    <picture>
+                                        <source
+                                        srcset=”
+                                            ./images/project-4.jpg 1x,
+                                            ./images/project-4-desktop-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 1200px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-4-tab-1x.jpg 1x,
+                                            ./images/project-4-tab-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 768px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-4-mob-1x.jpg 1x,
+                                            ./images/project-4-mob-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 320px)”
+                                        />
+                                        <img src="./images/project-4.jpg" alt="Навушники" width="370"/>
+                                    </picture>
+                                    <p class="examples__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="examples__holder">
+                                    <h2 class="examples__title">Проєкт Prime</h2>
+                                    <p class="examples__description">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="examples__cards">
+                            <a href="" class="examples_link link">
+                                <div class="examples__img">
+                                    <picture>
+                                        <source
+                                        srcset=”
+                                            ./images/project-5.jpg 1x,
+                                            ./images/project-5-desktop-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 1200px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-5-tab-1x.jpg 1x,
+                                            ./images/project-5-tab-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 768px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-5-mob-1x.jpg    1x,
+                                            ./images/project-5-mob-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 320px)”
+                                        />
+                                        <img src="./images/project-5.jpg" alt="Зображення коробок" width="370"/>
+                                    </picture>
+                                    <p class="examples__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="examples__holder">
+                                    <h2 class="examples__title">Проєкт Boxes</h2>
+                                    <p class="examples__description">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="examples__cards">
+                            <a href="" class="examples_link link">
+                                <div class="examples__img">
+                                    <picture>
+                                        <source
+                                        srcset=”
+                                            ./images/project-6.jpg 1x,
+                                            ./images/project-6-desktop-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 1200px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-6-tab-1x.jpg 1x,
+                                            ./images/project-6-tab-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 768px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-6-mob-1x.jpg 1x,
+                                            ./images/project-6-mob-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 320px)”
+                                        />
+                                        <img src="./images/project-6.jpg" alt="Монітор з зображенням сайту" width="370"/>
+                                    </picture>
+                                    <p class="examples__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="examples__holder">
+                                    <h2 class="examples__title">Inspiration has no Borders</h2>
+                                    <p class="examples__description">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="examples__cards">
+                            <a href="" class="examples_link link">
+                                <div class="examples__img">
+                                    <picture>
+                                        <source
+                                        srcset=”
+                                            ./images/project-7.jpg 1x,
+                                            ./images/project-7-desktop-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 1200px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-7-tab-1x.jpg 1x,
+                                            ./images/project-7-tab-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 768px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-7-mob-1x.jpg 1x,
+                                            ./images/project-7-mob-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 320px)”
+                                        />
+                                        <img src="./images/project-7.jpg" alt="Книга видання" width="370"/>
+                                    </picture>
+                                    <p class="examples__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="examples__holder">
+                                    <h2 class="examples__title">Видання Limited Edition</h2>
+                                    <p class="examples__description">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="examples__cards">
+                            <a href="" class="examples_link link">
+                                <div class="examples__img">
+                                    <picture>
+                                        <source
+                                        srcset=”
+                                            ./images/project-8.jpg 1x,
+                                            ./images/project-8-desktop-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 1200px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-8-tab-1x.jpg 1x,
+                                            ./images/project-8-tab-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 768px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-8-mob-1x.jpg 1x,
+                                            ./images/project-8-mob-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 320px)”
+                                        />
+                                        <img src="./images/project-8.jpg" alt="Етикетка з підписом" width="370"/>
+                                    </picture>
+                                    <p class="examples__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="examples__holder">
+                                    <h2 class="examples__title">Проєкт LAB</h2>
+                                    <p class="examples__description">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="examples__cards">
+                            <a href="" class="examples_link link">
+                                <div class="examples__img">
+                                    <picture>
+                                        <source
+                                        srcset=”
+                                            ./images/project-9.jpg 1x,
+                                            ./images/project-9-desktop-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 1200px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-9-tab-1x.jpg 1x,
+                                            ./images/project-9-tab-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 768px)”
+                                        />
+                                        <source
+                                        srcset=”
+                                            ./images/project-9-mob-1x.jpg    1x,
+                                            ./images/project-9-mob-2x.jpg 2x
+                                        ”
+                                        media=“(min-width: 320px)”
+                                        />
+                                        <img src="./images/project-9.jpg" alt="Ноутбук зі сторінкою додатку" width="370"/>
+                                    </picture>
+                                    <p class="examples__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="examples__holder">
+                                    <h2 class="examples__title">Growing Business</h2>
+                                    <p class="examples__description">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class=" contacts links footer">
+        <div class="contacts__container">
+            <div class="contacts__address-holder">
+                <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
+                <address class="contacts__list">
+                    <ul class="contacts__holder list">
+                        <li><a href="https://goo.gl/maps/gEgkedTg2fkSHyE56" target="_blank" rel="noopener noreferrer" class="contacts__address link">м. Київ, пр-т Лесі Українки, 26</a></li> 
+                        <li><a href="mailto:info@devstudio.com" class="contacts__mail contacts link">info@devstudio.com</a></li>
+                        <li><a href="tel:+380961111111" class="contacts__phone contacts link">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="join">
+                <p class="join__title">приєднуйтесь</p>
+                <ul class="join__list list social">
+                    <li class="join__list-item">
+                        <a href="" class="join__icon-holder">
+                            <svg class="join__icon-soc" width="20px" height="20px">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__list-item">
+                        <a href="" class="join__icon-holder">
+                            <svg class="join__icon-soc" width="20px" height="20px">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__list-item">
+                        <a href="" class="join__icon-holder">
+                            <svg class="join__icon-soc" width="20px" height="20px">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__list-item">
+                        <a href="" class="join__icon-holder">
+                            <svg class="join__icon-soc" width="20px" height="20px">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <b>Підпишіться на розсилку</b>
+                <div class="subscribe__holder">
+                    <div class="subscribe__item">
+                        <input type="email" class="subscribe__input" name="email-subscribe" id="user-email-subscribe" placeholder="E-mail"/>
+                    </div>
+                    <button type="button" class="subscribe__button">
+                        <span>Підписатися</span>
+                        <svg class="subscribe__icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
