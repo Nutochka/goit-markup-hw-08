@@ -78,6 +78,7 @@
 .list.examples {
     display: flex;
     justify-content: center;
+    margin: auto;
 
     @media screen and (min-width: 480px) {
         flex-wrap: wrap;
@@ -166,6 +167,8 @@
 }
 
 .examples__gallery-box {
+
+    margin: auto;
 
     @media screen and (max-width: 479px) {
         width: 300px;

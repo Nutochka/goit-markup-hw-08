@@ -92,13 +92,15 @@
     border-radius: 0px 0px 4px 4px;
     background-color: var(--background-team);
     height: 428px;
+    width: 300px;
+    margin: auto;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
         width: 450px;
         height: 622px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 354px;
         height: 536px;
     }
@@ -112,6 +114,20 @@
 .team__info-holder {
     padding-bottom: 30px;
     padding-top: 30px;
+    min-height: 162px;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        min-height: 162px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        min-height: 162px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        min-height: 168px;
+    }
+    
 }
 
 .team__soc-icon {

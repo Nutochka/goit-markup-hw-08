@@ -195,10 +195,11 @@ img {
 .navigation__links {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .navigation__links {
     display: initial;
     width: 768px;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -208,6 +209,7 @@ img {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    display: flex;
   }
 }
 
@@ -659,14 +661,16 @@ header .logo {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--background-team);
   height: 428px;
+  width: 300px;
+  margin: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .team__cards {
     width: 450px;
     height: 622px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__cards {
     width: 354px;
     height: 536px;
@@ -682,6 +686,22 @@ header .logo {
 .team__info-holder {
   padding-bottom: 30px;
   padding-top: 30px;
+  min-height: 162px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team__info-holder {
+    min-height: 162px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__info-holder {
+    min-height: 162px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__info-holder {
+    min-height: 168px;
+  }
 }
 
 .team__soc-icon {
@@ -782,6 +802,7 @@ header .logo {
 .list.examples {
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 @media screen and (min-width: 480px) {
   .list.examples {
@@ -866,6 +887,9 @@ header .logo {
   }
 }
 
+.examples__gallery-box {
+  margin: auto;
+}
 @media screen and (max-width: 479px) {
   .examples__gallery-box {
     width: 300px;
