@@ -57,6 +57,10 @@
     align-items: center;
     width: 44px;
     height: 44px;
+
+    @media screen and (max-width: 479px) {
+        padding-bottom: 36px;
+    }
 }
 
 .team__soc-profiles {

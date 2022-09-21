@@ -1,11 +1,13 @@
+
+@import '../utils/vars';
+@import '../utils/mixins';
+@import './common';
 @import './header';
 @import './hero';
 @import './advantages';
 @import './profile';
 @import './team';
 @import './examples';
-@import '../utils/vars';
-@import './common';
 @import './clients';
 @import './contacts';
 @import './modal';

@@ -32,6 +32,11 @@ ul {
     display: block;
     margin-bottom: 12px; 
     background-color: #ffffff;
+    border: none;
+}
+
+.menu-close:focus > .menu-close-button {
+    fill: #2196F3;
 }
 
 .menu-open {
@@ -132,4 +137,12 @@ ul {
     line-height: calc(22/18);
     letter-spacing: 0.02em;
     color: #2196F3;
+
+    @media screen and (max-width: 479px) {
+        font-size: 10px;
+    }
+}
+
+.mob-menu-link.current {
+    color: var(--accent-color);
 }
