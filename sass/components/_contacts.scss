@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     // justify-content: space-between;
-    height: 603px;
+    // height: 603px;
     width: 480px;
     justify-content: center;
     flex-direction: column;
@@ -11,7 +11,7 @@
 
     @media screen and (min-width: 768px) {
         flex-wrap: nowrap;
-        height: 463px;
+        // height: 463px;
     }
 
     @media screen and (min-width:1200px) {
@@ -68,6 +68,7 @@
     // align-items: baseline;
     @media screen and (min-width: 768px) {
         display: flex;
+        align-items: baseline;
         gap: 165px;
     }
 
@@ -206,6 +207,10 @@ footer .logo {
         height: 50px;
         margin: auto;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 480px) {
+            width: 280px;
+        }
 
         @media screen and (min-width: 1200px) {
             width: 358px;
